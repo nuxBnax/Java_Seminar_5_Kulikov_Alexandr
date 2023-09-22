@@ -8,15 +8,23 @@
 
 public class Task1 {
     public static void main(String[] args) {
-        Phones passports = new Phones();
-        passports.add("123456","Иван");
-        passports.add("321456","Вася");
-        passports.add("234561","Петя");
-        passports.add("234432","Иван");
-        passports.add("654321","Катя");
-        passports.add("345678","Александр");
-        System.out.println(passports.getByName("Иванов"));
-        System.out.println(passports.getByPhoneNum("321456"));
-        System.out.println(passports.getAll());
+        Phones phones = new Phones();
+        phones.add("Иван",1);
+        phones.add("Василий",2);
+        phones.add("Петя",3);
+        phones.add("Катя",4);
+        phones.add("Марина",5);
+        phones.add("Генадий",6);
+        phones.add("Артур",7);
+        phones.add("Иван",8);
+        phones.add("Артур",17);
+        phones.add("Иван",18);
+
+//        System.out.println(phones.getByPhoneNum(1));
+//        phones.getByName("Иван");
+        System.out.println(phones.getAll());
+
+        System.out.println(phones.print());
+
     }
 }
